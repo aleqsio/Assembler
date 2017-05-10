@@ -201,9 +201,9 @@ push	BX
 		mov		AX,word ptr ds:[bally]
 		mov		BX,word ptr ds:[ay]
 		sub		AX,BX
-		cmp		AX,15
+		cmp		AX,20
 		jg		over
-		cmp		AX,-15
+		cmp		AX,-20
 		jl		over
 		mov		BX,word ptr ds:[ballxvec]
 		xor		AX,AX
